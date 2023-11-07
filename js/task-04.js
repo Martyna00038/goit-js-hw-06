@@ -6,8 +6,6 @@ const incrementButton = document.querySelector(
 );
 let counterValue = document.querySelector("#value");
 
-counterValue.textContent = 0;
-
 const decrement = () => {
     counterValue.textContent--;
 };
