@@ -4,14 +4,16 @@ const decrementButton = document.querySelector(
 const incrementButton = document.querySelector(
     `button[data-action="increment"]`
 );
-let counterValue = document.querySelector("#value");
-
+let counterValue = 0;
+let valueElement = document.querySelector("#value");
 const decrement = () => {
-    counterValue.textContent--;
+    counterValue--;
+    valueElement.textContent = counterValue;
 };
 
 const increment = () => {
-    counterValue.textContent++;
+    counterValue++;
+    valueElement.textContent = counterValue;
 };
 
 decrementButton.addEventListener("click", decrement);
